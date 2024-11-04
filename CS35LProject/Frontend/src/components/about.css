@@ -1,0 +1,72 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    color: #333;
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-header {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 85px;
+    font-weight: 600; /* Bold weight for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+    background: linear-gradient(45deg, #ff007f, #ff6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+  
+  .about-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .about-team-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+  
+  .about-team-member {
+    margin-bottom: 10px;
+  }
+  
+  .about-image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .about-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-name {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .about-image {
+    width: 175px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-image-samyukhtha {
+    width: 150px;
+    height: 200px;
+  }
+  

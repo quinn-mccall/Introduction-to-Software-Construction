@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+* {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.logout-button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .logout-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .confirm-button, .cancel-button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .confirm-button:hover, .cancel-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .logout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .logout-container h3 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+  

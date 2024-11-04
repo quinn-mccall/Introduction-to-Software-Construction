@@ -1,0 +1,181 @@
+/* historyPage.css */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+* {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.history-page-container {
+  background: linear-gradient(45deg, #ffffff, #add8e6);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto; /* Ensure the container can scroll */
+  padding: 20px; /* Optional: Add padding for better spacing */
+}
+
+.history-page-container h1 {
+  font-size: 3em;
+  font-weight: 600; /* Bold weight for emphasis */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  background: linear-gradient(45deg, #ff007f, #ff6a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 425px;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
+
+.button-container button {
+  margin: 20px 10px;
+  color: #212529; /* Dark text color */
+  background-color: #f8f9fa; /* Light background color */
+  border-color: #f8f9fa; /* Border color matching the background */
+}
+
+.button-container button:hover {
+  color: #212529;
+  background-color: #e2e6ea; /* Slightly darker on hover */
+  border-color: #dae0e5; /* Slightly darker border on hover */
+}
+
+.button-container button:focus, .button-container button:focus {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+  box-shadow: 0 0 0 0.2rem rgba(216,217,219,0.5); /* Shadow for focus state */
+}
+
+.search-button,  .reset-button{
+  color: white;
+  padding: 10px 20px; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Change cursor on hover */
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+#no-trans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transaction-list {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px;
+  padding: 0;
+}
+
+.transaction-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.transaction-item {
+  background: #fff;
+  position: relative;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  /* Allow auto height for flexibility */
+  margin-bottom: 20px;
+}
+
+.buttons {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.buttons button {
+  background-color: inherit;
+  border: none;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s;
+}
+
+.transaction-item p {
+  margin: 5px 0;
+}
+
+.transaction-item strong {
+  font-weight: 600;
+}
+
+/* Conditional styling for income and expense */
+.income {
+  background-color: #fff3e0; /* Light orange */
+}
+
+.expense {
+  background-color: #ffe0e0; /* Light pink */
+}
+
+/* For the edit transaction dialog */
+.dialog-title {
+  background: linear-gradient(45deg, #add8e6, #add8ff);
+  color: black;
+  padding: 16px; /* Padding */
+  margin-bottom: 50px;
+  text-align: center; /* Center align text */
+  font-weight: 500 !important; /* Increased font weight specificity */
+  font-family: 'Fira Sans', sans-serif !important;
+}
+
+.dialog-content {
+  padding: 20px; /* Add padding */
+  margin-top: 30px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.dialog-input {
+  margin-bottom: 16px; /* Add space between inputs */
+}
+
+.dialog-actions {
+  padding: 16px; /* Add padding */
+  display: flex; /* Flex display */
+  justify-content: space-between; /* Space between buttons */
+}
+
+.dialog-button {
+  min-width: 100px; /* Minimum width for buttons */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .transaction-list ul {
+    margin: 0 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .transaction-list ul {
+    margin: 0 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .transaction-item {
+    width: 100%;
+  }
+}

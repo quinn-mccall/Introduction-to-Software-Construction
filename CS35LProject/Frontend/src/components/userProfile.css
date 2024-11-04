@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+* {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.ret{
+    border-radius: 8px;
+}
+
+.user-profile {
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-profile h2 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.user-profile p {
+  color: #555;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.user-profile button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.user-profile button:hover {
+  background-color: black;
+  color: white;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}

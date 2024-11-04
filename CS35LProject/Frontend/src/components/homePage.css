@@ -1,0 +1,171 @@
+/* homePage.css */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+* {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.home-page-container {
+  background: linear-gradient(45deg, #ffffff, #add8e6);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centers content horizontally */
+  justify-content: center;  /* Centers content vertically */
+  overflow: auto; /* Ensure the container can scroll */
+  padding: 20px; /* Optional: Add padding for better spacing */
+}
+
+  /* Add new style for the button */
+  /* Adjust the margin and position the button to the right */
+  .home-page-container .history-button {
+    margin-top: -90px; /* Adjust the margin as needed */
+    margin-left: 700px; /* Push the button to the right */
+    background-color: #ff4d4d; /* Light pink/coral */
+    color: white;
+    font-size: 20px; /* Set font size */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Change cursor on hover */
+    font-weight: 500;
+  }
+
+  /* Style on hover */
+  .home-page-container .history-button:hover {
+    background-color: #e60073; /* Darker pink */
+  }
+  
+  .home-page-container h1 {
+    font-size: 3em;
+    font-weight: 600; /* Bold weight for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+    background: linear-gradient(45deg, #ff007f, #ff6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 1125px;
+  }
+  
+  /*.home-page-container h2 {
+    font-size: 2.5em;
+    color: #4c0870;
+    margin: 20px 0;
+  }*/
+
+  .home-page-container h2 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+    background: linear-gradient(45deg, #ff007f, #ff6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0;
+    font-weight: 700; /* Bold weight for emphasis */
+    letter-spacing: 0.01em; /* Slight letter spacing for readability */
+    line-height: 1.2; /* Adequate line height */
+  }
+  
+
+  .home-page-container h3 {
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-right: 300px;
+  }
+
+  .home-page-container h4 {
+    font-size: 1.4em;
+    margin-top: 50px;
+    margin-right: 200px;
+  }
+  
+  .home-page-container form {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .home-page-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .home-page-container input[type="number"],
+  .home-page-container input[type="text"],
+  .home-page-container select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .home-page-container form label p{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 0.85rem;
+  }
+  
+  .home-page-container form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d4d; /* Light pink/coral */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .home-page-container form button:hover , .history-button:hover {
+    background-color: #e60073; /* Darker pink */
+  }
+  
+  
+  .home-page-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .home-page-container li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-page-container li strong {
+    font-weight: 600;
+  }
+
+  .alert {
+    margin-top: 10px;
+  }
+  
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+
+
+  
+
+
+  
+
+  
